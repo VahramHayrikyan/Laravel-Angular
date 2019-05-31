@@ -9,6 +9,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,11 @@ import { AppRoutingModule } from './app-routing.module';
     ResponseResetComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+      BrowserModule,
+      AppRoutingModule,
+      FormsModule,
+      HttpClientModule,
+      AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
